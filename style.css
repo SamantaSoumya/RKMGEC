@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* color: white; */
+}
+
+.naV {
+    background-color: #c6c8db;
+}
+
+.header {
+    display: flex;
+    background-color: #092742;
+}
+
+.lefthead {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+}
+
+.lefthead h2 a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+.midhead {
+    width: 20%;
+}
+
+.midhead a img {
+    width: 80px;
+}
+
+@media only screen and (max-width: 400px) {
+    .lefthead h2 a {
+        font-size: 1.5rem;
+    }
+}
+
+.section {
+    color: white;
+    background-color: rgb(35 35 128);
+    display: flex;
+}
+
+.carousel-inner img {
+    height: 450px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .carousel-inner img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .carousel-inner img {
+        height: 250px;
+    }
+}
+
+.fees {
+    font-size: 1rem;
+    font-weight: bold;
+    /* background-color: #6f76b7;
+    color: white; */
+}
+
+.event {
+    margin: 0;
+}
+.recent li{
+    /* line-height: 5px; */
+    list-style: none;
+    padding-bottom: 5px;
+}
+.recent li a{
+    text-decoration: none;
+    color: #332d60;
+    font-size: 1.2rem;
+}

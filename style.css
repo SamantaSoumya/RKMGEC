@@ -13,7 +13,48 @@
     display: flex;
     background-color: #092742;
 }
-
+/* Dropdown Button */
+.dropbtn {
+    background-color:rgb(33,37,41);
+    color: white; 
+    padding-left:18px;
+    padding-right: 18px;
+    font-size: 18px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #210541;}
 .lefthead {
     width: 80%;
     align-items: center;
@@ -84,4 +125,55 @@
 }
 .datee{
     color: black;
+}
+.fontNew{
+    background-color: red;
+    padding: 1px 2px;
+    font-size: 10px;
+    color: white;
+    vertical-align: middle;
+}
+.map-container-3{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container-3 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+.floating{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 40px;
+}
+.landing-right{
+    min-width: 100%;
+    margin: 20px 20px;
+    display: flex;
+    /* flex: 0.4; */
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    box-shadow: 5px 2px 20px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+}
+@keyframes floating{
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
 }
